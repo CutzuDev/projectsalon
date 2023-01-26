@@ -1,0 +1,90 @@
+#land-section {
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  grid-template: repeat(10, 1fr) / repeat(20, 1fr);
+  padding: 20px;
+}
+.grid-overlay {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  grid-template: repeat(10, 1fr) / repeat(20, 1fr);
+  padding: 20px;
+  top: 80px;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.item {
+  background-color: rgba(255, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__title {
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/4;
+  grid-column: 3/10;
+  font-size: 60px;
+}
+
+.about-me__para {
+  background-color: royalblue;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  grid-row: 4/8;
+  grid-column: 3/10;
+}
+
+.about-me__picture {
+  grid-row: 2/10;
+  grid-column: 13/18;
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+}
+
+.about-me__picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-me__buttons-container {
+  width: 100%;
+  height: 100%;
+  grid-row: 8/10;
+  grid-column: 3/10;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-me__button {
+  padding: 20px 50px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
