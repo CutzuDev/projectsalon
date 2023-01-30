@@ -1,3 +1,4 @@
+import LOGO from "../assets/LOGO.png";
 import "./Components.css";
 
 function Navbar() {
@@ -5,8 +6,8 @@ function Navbar() {
     <nav>
       <div className="navbar__container">
         <div className="nav__title-and-logo">
-          <img src="." alt="" className="nav__logo" />
-          <h1 className="nav__title">Lavinia Selim</h1>
+          <img src={LOGO} alt="" className="nav__logo" />
+          <h1 className="nav__title">Selim Lavinia</h1>
         </div>
         <ul className="nav__list">
           <li className="nav__button">Servicii</li>
