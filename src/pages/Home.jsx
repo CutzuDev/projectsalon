@@ -11,7 +11,7 @@ function Home() {
     <div>
       <section id="land-section">
         <h1 className="about-me__title">Despre Mine</h1>
-        <div className="about__me--para-container">
+        <div className="about-me__para-container">
           <p className="about-me__para">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
             voluptatibus quidem doloribus architecto consectetur ratione,
@@ -25,6 +25,9 @@ function Home() {
         </div>
         <div className="about-me__picture">
           <img src={AboutMePicture} alt="" />
+        </div>
+        <div className="about-me__button-container">
+          <button className="about-me__button">Clienti</button>
         </div>
       </section>
       {/* <div className="grid-overlay">

@@ -2,9 +2,13 @@
 body {
   --nav-height: 80px;
   --main__color: #fdc5f5;
-  --footer-height: 100px;
+  --footer-height: 80px;
   overflow-x: hidden;
-  background-color: rgba(253, 197, 245, 0.2);
+  background-image: linear-gradient(
+    145deg,
+    rgba(253, 197, 245, 0.1),
+    rgba(253, 197, 245, 0.35)
+  );
 }
 
 * {
@@ -25,6 +29,11 @@ h6,
 p,
 li:hover {
   cursor: default;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 ul {

@@ -2,20 +2,11 @@
   width: calc(100vw - 40px);
   height: calc(100vh - var(--nav-height) - var(--footer-height) - 40px);
   display: grid;
-  gap: 20px;
+  gap: 10px;
   place-items: center;
-  grid-template: repeat(10, 1fr) / repeat(20, 1fr);
+  grid-template: repeat(8, 1fr) / repeat(20, 1fr);
   margin: 20px;
 }
-
-/* .item {
-  background-color: rgba(255, 0, 0, 0.25);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .about-me__title {
   width: 100%;
@@ -44,15 +35,15 @@
   line-height: 30px;
 }
 
-.about__me--para-container {
+.about-me__para-container {
   height: 100%;
   width: 100%;
-  grid-row: 4/8;
+  grid-row: 4/7;
   grid-column: 3/10;
 }
 
 .about-me__picture {
-  grid-row: 2/10;
+  grid-row: 2/8;
   grid-column: 13/18;
   width: 100%;
   height: 100%;
@@ -69,22 +60,56 @@
   object-fit: cover;
 }
 
+.about-me__button-container {
+  width: 100%;
+  height: 100%;
+  grid-row: 7/8;
+  grid-column: 3/10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__button {
+  padding: 10px 40px;
+  font-size: 28px;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: var(--main__color);
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: 75ms all ease-in-out;
+}
+
+.about-me__button:active {
+  transform: scale(0.9);
+  filter: brightness(0.9);
+}
+
 /* .grid-overlay {
   position: absolute;
   width: calc(100vw - 40px);
   height: 100vh;
   width: 100vw;
-  height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-height) - var(--footer-height));
   display: grid;
   gap: 20px;
   place-items: center;
   grid-template: repeat(10, 1fr) / repeat(20, 1fr);
-  top: 80px;
+  top: var(--nav-height);
   opacity: 1;
-  opacity: 0;
   z-index: -1;
   padding: 20px;
-}  */
+}
+
+.item {
+  background-color: rgba(255, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 @keyframes AboutMePictureAnim {
   0% {
