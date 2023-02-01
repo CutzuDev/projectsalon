@@ -3,7 +3,7 @@ import "./Pages.css";
 
 function Home() {
   let test = [];
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 160; i++) {
     test = [...test, i];
   }
 
@@ -24,19 +24,19 @@ function Home() {
           </p>
         </div>
         <div className="about-me__picture">
-          <img src={AboutMePicture} alt="" />
+          {/* <img src={AboutMePicture} alt="" /> */}
         </div>
         <div className="about-me__button-container">
           <button className="about-me__button">Clienti</button>
         </div>
       </section>
-      {/* <div className="grid-overlay">
+      <div className="grid-overlay">
         {test.map((e) => (
           <div className={`item i${e + 1}`} key={`${e + 1}`}>
             {e + 1}
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }

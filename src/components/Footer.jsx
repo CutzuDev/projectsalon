@@ -11,16 +11,16 @@ function Footer() {
             <h4 className="footer__credits-link--text">
               <span className="fclts">
                 Developed by
-                {/* <a
+                <a
                   className="footer__credits--scolor"
                   href="https://www.alexfarkas.me/"
                   target={"_blank"}
                 >
                   Alex Farkas
-                </a> */}
+                </a>
+                at
               </span>
               <span className="fclts">
-                {/* at */}
                 <img src={MWLOGO} className="footer__credits-photo" />
                 <a
                   href="https://www.motionwebsites.net/"
