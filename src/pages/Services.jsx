@@ -9,7 +9,36 @@ function Services() {
   for (let i = 0; i < 160; i++) {
     test = [...test, i];
   }
-  let cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  let cards = [
+    {
+      title: "Micropigmentare",
+      list: ["Buze - 500", 2, 3, 4, 5, 6],
+    },
+    {
+      title: "test",
+      list: [1, 2, 3, 4, 5, 6],
+    },
+    {
+      title: "test",
+      list: [1, 2, 3, 4, 5, 6],
+    },
+    {
+      title: "test",
+      list: [1, 2, 3, 4, 5, 6],
+    },
+    {
+      title: "test",
+      list: [1, 2, 3, 4, 5, 6],
+    },
+    {
+      title: "test",
+      list: [1, 2, 3, 4, 5, 6],
+    },
+    {
+      title: "test",
+      list: [1, 2, 3, 4, 5, 6],
+    },
+  ];
 
   return (
     <div>
@@ -17,16 +46,19 @@ function Services() {
         <ScrollContainer
           className="services__container scroll-container"
           horizontal={true}
-sad          activationDistance={20}
+          activationDistance={20}
         >
           {cards.map((e, i) => (
-            <ul
-              className="services__list ssa"
-              key={i}
-              ref={serviceContainerItem}
-            >
-              Lista {e}
-            </ul>
+            <div className="services__list" key={i} ref={serviceContainerItem}>
+              <h3 className="services__item-title">{e.title}</h3>
+              <ul className="services__item-element--container">
+                {e.list.map((e, i) => (
+                  <li className="services__item-element" key={i}>
+                    {e}RON
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </ScrollContainer>
       </section>
