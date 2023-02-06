@@ -13,14 +13,10 @@ function Home() {
         <h1 className="about-me__title">Despre Mine</h1>
         <div className="about-me__para-container">
           <p className="about-me__para">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            voluptatibus quidem doloribus architecto consectetur ratione,
-            aliquid earum quam, molestiae similique fugit numquam, sint
-            perferendis autem fugiat laudantium vel eveniet minima mollitia!
-            Dolorem pariatur officiis doloribus rerum. Eveniet harum voluptas
-            vel sunt maiores corporis quam in, nihil eum est, fuga debitis
-            explicabo non beatae magnam delectus culpa. Magnam in placeat
-            voluptatum dolore accusamus.
+            Lucrez in domeniul beauty de 7 ani, sunt acreditata in
+            dermopigmentare, make-up, si tatto remove (stergere indepartare
+            tatuaje), iubesc ceea ce fac si mereu imi doresc sa obtin cele mai
+            bune rezultate pentru clientii mei.
           </p>
         </div>
         <div className="about-me__picture">

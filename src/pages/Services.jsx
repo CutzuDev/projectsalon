@@ -1,44 +1,21 @@
-import { useRef } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
+import list from "./ServicesList";
 import "./Pages.css";
+import { useRef } from "react";
 
 function Services() {
   let test = [];
-  const serviceContainerItem = useRef(null);
+
+  const ref = useRef(null);
 
   for (let i = 0; i < 160; i++) {
     test = [...test, i];
   }
-  let cards = [
-    {
-      title: "Micropigmentare",
-      list: ["Buze - 500", 2, 3, 4, 5, 6],
-    },
-    {
-      title: "test",
-      list: [1, 2, 3, 4, 5, 6],
-    },
-    {
-      title: "test",
-      list: [1, 2, 3, 4, 5, 6],
-    },
-    {
-      title: "test",
-      list: [1, 2, 3, 4, 5, 6],
-    },
-    {
-      title: "test",
-      list: [1, 2, 3, 4, 5, 6],
-    },
-    {
-      title: "test",
-      list: [1, 2, 3, 4, 5, 6],
-    },
-    {
-      title: "test",
-      list: [1, 2, 3, 4, 5, 6],
-    },
-  ];
+
+  const scroll = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+    console.log("click")
+  };
 
   return (
     <div>
@@ -46,21 +23,33 @@ function Services() {
         <ScrollContainer
           className="services__container scroll-container"
           horizontal={true}
+          hideScrollbars={false}
           activationDistance={20}
+          ref={ref}
         >
-          {cards.map((e, i) => (
-            <div className="services__list" key={i} ref={serviceContainerItem}>
+          {list.map((e, i) => (
+            <div className="services__list" key={i}>
               <h3 className="services__item-title">{e.title}</h3>
               <ul className="services__item-element--container">
                 {e.list.map((e, i) => (
                   <li className="services__item-element" key={i}>
-                    {e}RON
+                    {e.service}
+                    <span className="services__item-element--price">
+                      {e.price} RON
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
         </ScrollContainer>
+
+        <button className="marius" onClick={() => scroll(-20)}>
+          LEFT
+        </button>
+        <button className="marius" onClick={() => scroll(20)}>
+          RIGHT
+        </button>
       </section>
       <div className="grid-overlay fwh">
         {test.map((e) => (
