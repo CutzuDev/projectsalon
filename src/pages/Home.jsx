@@ -20,7 +20,7 @@ function Home() {
           </p>
         </div>
         <div className="about-me__picture">
-          {/* <img src={AboutMePicture} alt="" /> */}
+          {/* <img src={AboutMePicture} draggable={false} alt="" /> */}
         </div>
         <div className="about-me__button-container">
           <button className="about-me__button">Clienti</button>

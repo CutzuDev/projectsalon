@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from "../assets/SVGS";
+import { Instagram, Facebook, TikTok } from "../assets/SVGS";
 import MWLOGO from "../assets/MWLOGO.png";
 import "./Components.css";
 
@@ -49,6 +49,14 @@ function Footer() {
           >
             <Facebook size={25} color={"#fdc5f5"} />
             <h4 className="footer__social-link--text">Facebook</h4>
+          </a>
+          <a
+            href="https://muie.com"
+            target={"_blank"}
+            className="footer__social-link"
+          >
+            <TikTok size={25} color={"#fdc5f5"} />
+            <h4 className="footer__social-link--text">Tiktok</h4>
           </a>
         </ul>
       </div>

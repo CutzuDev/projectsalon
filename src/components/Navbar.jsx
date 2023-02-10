@@ -7,7 +7,9 @@ function Navbar() {
     <nav>
       <div className="navbar__container">
         <div className="nav__title-and-logo">
-          <img src={LOGO} alt="" className="nav__logo" />
+          <Link to={"/"}>
+            <img draggable={false} src={LOGO} alt="" className="nav__logo" />
+          </Link>
           <h1 className="nav__title">Selim Lavinia</h1>
         </div>
         <ul className="nav__list">

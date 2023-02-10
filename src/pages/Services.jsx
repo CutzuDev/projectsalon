@@ -1,31 +1,41 @@
 import ScrollContainer from "react-indiana-drag-scroll";
 import list from "./ServicesList";
 import "./Pages.css";
-import { useRef } from "react";
+import { useState } from "react";
+import FP from "../assets/FP.png";
 
 function Services() {
-  let test = [];
+  const [scValue, setscValue] = useState("flex");
 
-  const ref = useRef(null);
-
-  for (let i = 0; i < 160; i++) {
-    test = [...test, i];
-  }
-
-  const scroll = (scrollOffset) => {
-    ref.current.scrollLeft += scrollOffset;
-    console.log("click")
-  };
+  setTimeout(() => {
+    setscValue("none");
+  }, 6600);
 
   return (
     <div>
+      <div
+        className="swipe__container"
+        onClick={() => setscValue("none")}
+        style={{ display: `${scValue}` }}
+      >
+        <div className="swipe__bubble--container">
+          <div className="swipe__bubble">
+            <img draggable={false} src={FP} alt="" />
+          </div>
+        </div>
+      </div>
       <section id="land-section">
         <ScrollContainer
           className="services__container scroll-container"
+          vertical={false}
           horizontal={true}
-          hideScrollbars={false}
+          hideScrollbars={true}
           activationDistance={20}
-          ref={ref}
+          style={{
+            overflow: "unset",
+            overflowX: "auto",
+            overflowY: "hidden",
+          }}
         >
           {list.map((e, i) => (
             <div className="services__list" key={i}>
@@ -43,21 +53,7 @@ function Services() {
             </div>
           ))}
         </ScrollContainer>
-
-        <button className="marius" onClick={() => scroll(-20)}>
-          LEFT
-        </button>
-        <button className="marius" onClick={() => scroll(20)}>
-          RIGHT
-        </button>
       </section>
-      <div className="grid-overlay fwh">
-        {test.map((e) => (
-          <div className={`item i${e + 1}`} key={`${e + 1}`}>
-            {e + 1}
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

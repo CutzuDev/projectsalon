@@ -28,7 +28,7 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  font-size: 20px;
+  font-size: 26px;
   font-style: italic;
   height: 100%;
   width: 100%;
@@ -123,6 +123,8 @@
   overflow-x: scroll;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  overflow-y: hidden;
+  background-color: #fff9fe;
 }
 
 .services__list {
@@ -136,24 +138,29 @@
   align-items: center;
   flex-direction: column;
   gap: 25px;
-  background-color: rgb(241, 241, 241);
+  background-color: #fff9fe;
   border-radius: 10px;
   width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .services__item-title {
   font-size: 26px;
   margin-top: 20px;
   font-weight: 900;
+  height: 30px;
 }
 
 .services__item-element--container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  overflow-y: auto;
+  max-height: 420px;
+  border-radius: 10px;
 }
 
 .services__item-element {
@@ -163,7 +170,7 @@
   gap: 10px;
   font-size: 18px;
   background-color: whitesmoke;
-  padding: 5px 20px;
+  padding: 20px 20px;
   width: 100%;
   font-weight: 700;
   border-radius: 5px;
@@ -173,15 +180,66 @@
 .services__item-element--price {
   background-color: var(--main__color);
   border-radius: 5px;
-  padding: 2.5px 10px;
+  padding: 5px 10px;
   font-size: 16px;
 }
 
-.marius {
+.swipe__container {
+  z-index: 999;
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height) - var(--footer-height) - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: swipeContainerAnim 20s ease-in-out;
+}
+
+.swipe__bubble--container {
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+
+.swipe__bubble {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fdc5f5;
+  box-shadow: 0px 0px 10px rgba(18, 18, 18, 0.25);
+  animation: swipeAnim 2s ease-in-out 0.5s 3;
+  transition: all 300ms ease-in-out;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%) scale(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipe__bubble img {
   width: 100%;
   height: 100%;
-  background-color: orange;
-  cursor: pointer;
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+}
+
+@keyframes swipeAnim {
+  0% {
+    transform: translateY(-50%) translateX(0px) scale(0);
+  }
+  20% {
+    transform: translateY(-50%) translateX(0px) scale(1);
+  }
+
+  80% {
+    transform: translateY(-50%) translateX(-150px) scale(1);
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(-150px) scale(0);
+  }
 }
 
 @keyframes AboutMePictureAnim {
