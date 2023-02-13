@@ -35,7 +35,7 @@ function Footer() {
         </ul>
         <ul className="footer__socials">
           <a
-            href="https://muie.com"
+            href="https://www.instagram.com/selim_lavinia/"
             target={"_blank"}
             className="footer__social-link"
           >
@@ -43,7 +43,7 @@ function Footer() {
             <h4 className="footer__social-link--text">Instagram</h4>
           </a>
           <a
-            href="https://muie.com"
+            href="https://www.facebook.com/lavinia.selim"
             target={"_blank"}
             className="footer__social-link"
           >
@@ -51,7 +51,7 @@ function Footer() {
             <h4 className="footer__social-link--text">Facebook</h4>
           </a>
           <a
-            href="https://muie.com"
+            href="https://www.tiktok.com/@selimlaviniamiky"
             target={"_blank"}
             className="footer__social-link"
           >

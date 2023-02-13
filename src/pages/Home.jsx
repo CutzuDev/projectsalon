@@ -1,11 +1,19 @@
+import { Link } from "react-router-dom";
 import AboutMePicture from "../assets/about_me_picture.jpeg";
 import "./Pages.css";
 
 function Home() {
-  let test = [];
-  for (let i = 0; i < 160; i++) {
-    test = [...test, i];
-  }
+  //   let test = [];
+  //   for (let i = 0; i < 160; i++) {
+  //     test = [...test, i];
+  //   }
+  //   <div className="grid-overlay">
+  //   {test.map((e) => (
+  //     <div className={`item i${e + 1}`} key={`${e + 1}`}>
+  //       {e + 1}
+  //     </div>
+  //   ))}
+  // </div>
 
   return (
     <div>
@@ -23,16 +31,11 @@ function Home() {
           {/* <img src={AboutMePicture} draggable={false} alt="" /> */}
         </div>
         <div className="about-me__button-container">
-          <button className="about-me__button">Clienti</button>
+          <Link to={"/clients"}>
+            <button className="about-me__button">Clienti</button>
+          </Link>
         </div>
       </section>
-      <div className="grid-overlay">
-        {test.map((e) => (
-          <div className={`item i${e + 1}`} key={`${e + 1}`}>
-            {e + 1}
-          </div>
-        ))}
-      </div>
     </div>
   );
 }
