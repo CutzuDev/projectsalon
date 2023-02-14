@@ -32,7 +32,7 @@ function Home() {
         </div>
         <div className="about-me__button-container">
           <Link to={"/clients"}>
-            <button className="about-me__button">Clienti</button>
+            <button className="about-me__button">Clienti Anteriori</button>
           </Link>
         </div>
       </section>

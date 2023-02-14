@@ -1,5 +1,5 @@
 import ScrollContainer from "react-indiana-drag-scroll";
-import list from "./ServicesList";
+import { ServicesList as list } from "./Lists";
 import "./Pages.css";
 import { useState } from "react";
 import FP from "../assets/FP.png";
@@ -12,12 +12,8 @@ function Services() {
   }, 6600);
 
   return (
-    <div>
-      <div
-        className="swipe__container"
-        onClick={() => setscValue("none")}
-        style={{ display: `${scValue}` }}
-      >
+    <div onClick={() => setscValue("none")}>
+      <div className="swipe__container" style={{ display: `${scValue}` }}>
         <div className="swipe__bubble--container">
           <div className="swipe__bubble">
             <img draggable={false} src={FP} alt="" />
