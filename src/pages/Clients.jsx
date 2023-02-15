@@ -5,10 +5,10 @@ import FP from "../assets/FP.png";
 import { ClientsList as list } from "./Lists";
 
 function Clients() {
-  let test = [];
-  for (let i = 0; i < 320; i++) {
-    test = [...test, i];
-  }
+  // let test = [];
+  // for (let i = 0; i < 320; i++) {
+  //   test = [...test, i];
+  // }
 
   return (
     <div>
@@ -18,8 +18,8 @@ function Clients() {
             <ReactBeforeSliderComponent
               key={index}
               className="BeforeAfterSlider"
-              firstImage={elem.beforeImage}
-              secondImage={elem.afterImage}
+              firstImage={elem.afterImage}
+              secondImage={elem.beforeImage}
               delimiterColor={"#f5f5f5"}
               currentPercentPosition={90}
               delimiterIconStyles={{
@@ -35,13 +35,13 @@ function Clients() {
           </div>
         ))}
       </section>
-      <div className="grid-overlay">
+      {/* <div className="grid-overlay">
         {test.map((e) => (
           <div className={`item i${e + 1}`} key={`${e + 1}`}>
             {e + 1}
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

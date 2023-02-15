@@ -2,61 +2,31 @@ export let ClientsList = [
   {
     afterImage: {
       imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069598860508409906/WhatsApp_Image_2023-01-30_at_14.43.35.jpeg",
+        "https://media.discordapp.net/attachments/857281682242273361/1075150044694585495/IMG5.png",
     },
     beforeImage: {
       imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069598872168583238/WhatsApp_Image_2023-01-30_at_14.43.36.jpeg",
+        "https://media.discordapp.net/attachments/857281682242273361/1075150043390156880/IMG7.png",
     },
   },
   {
     afterImage: {
       imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069722531264729108/WhatsApp_Image_2023-01-30_at_22.29.47.jpeg",
+        "https://media.discordapp.net/attachments/857281682242273361/1075150044963029042/IMG4.png",
     },
     beforeImage: {
       imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069722531533180999/WhatsApp_Image_2023-01-30_at_22.29.46.jpeg",
+        "https://media.discordapp.net/attachments/857281682242273361/1075150045403435058/IMG3.png",
     },
   },
   {
     afterImage: {
       imageUrl:
-        "https://media.discordapp.net/attachments/828855491383132170/1075120296681541764/image.png",
+        "https://media.discordapp.net/attachments/857281682242273361/1075150048146497658/IMG2.png",
     },
     beforeImage: {
       imageUrl:
-        "https://media.discordapp.net/attachments/828855491383132170/1075120311743291464/image.png",
-    },
-  },
-  {
-    afterImage: {
-      imageUrl:
-        "https://media.discordapp.net/attachments/828855491383132170/1075120861515878450/image.png",
-    },
-    beforeImage: {
-      imageUrl:
-        "https://media.discordapp.net/attachments/828855491383132170/1075120909410631771/image.png",
-    },
-  },
-  {
-    afterImage: {
-      imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069598860508409906/WhatsApp_Image_2023-01-30_at_14.43.35.jpeg",
-    },
-    beforeImage: {
-      imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069598872168583238/WhatsApp_Image_2023-01-30_at_14.43.36.jpeg",
-    },
-  },
-  {
-    afterImage: {
-      imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069598860508409906/WhatsApp_Image_2023-01-30_at_14.43.35.jpeg",
-    },
-    beforeImage: {
-      imageUrl:
-        "https://media.discordapp.net/attachments/857281682242273361/1069598872168583238/WhatsApp_Image_2023-01-30_at_14.43.36.jpeg",
+        "https://media.discordapp.net/attachments/857281682242273361/1075150049182503003/IMG1.png",
     },
   },
 ];
