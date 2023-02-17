@@ -4,10 +4,11 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150044694585495/IMG5.png",
     },
-    beforeImage: {
+  beforeImage: {
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150043390156880/IMG7.png",
     },
+    title: "micropigmentare",
   },
   {
     afterImage: {
@@ -18,6 +19,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150045403435058/IMG3.png",
     },
+    title: "micropigmentare",
   },
   {
     afterImage: {
@@ -28,6 +30,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150049182503003/IMG1.png",
     },
+    title: "micropigmentare",
   },
 ];
 

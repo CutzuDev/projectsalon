@@ -1,8 +1,11 @@
 import { Instagram, Facebook, TikTok } from "../assets/SVGS";
+import { useMediaQuery } from "react-responsive";
 import MWLOGO from "../assets/MWLOGO.png";
 import "./Components.css";
 
 function Footer() {
+  const isPhone = useMediaQuery({ query: "(min-width: 480px)" });
+
   return (
     <footer>
       <div className="footer__container">
@@ -40,7 +43,9 @@ function Footer() {
             className="footer__social-link"
           >
             <Instagram size={25} color={"#fdc5f5"} />
-            <h4 className="footer__social-link--text">Instagram</h4>
+            {isPhone && (
+              <h4 className="footer__social-link--text">Instagram</h4>
+            )}
           </a>
           <a
             href="https://www.facebook.com/lavinia.selim"
@@ -48,7 +53,7 @@ function Footer() {
             className="footer__social-link"
           >
             <Facebook size={25} color={"#fdc5f5"} />
-            <h4 className="footer__social-link--text">Facebook</h4>
+            {isPhone && <h4 className="footer__social-link--text">Facebook</h4>}
           </a>
           <a
             href="https://www.tiktok.com/@selimlaviniamiky"
@@ -56,7 +61,7 @@ function Footer() {
             className="footer__social-link"
           >
             <TikTok size={25} color={"#fdc5f5"} />
-            <h4 className="footer__social-link--text">Tiktok</h4>
+            {isPhone && <h4 className="footer__social-link--text">Tiktok</h4>}
           </a>
         </ul>
       </div>

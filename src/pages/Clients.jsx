@@ -32,6 +32,7 @@ function Clients() {
                 backgroundImage: `url(${FP})`,
               }}
             ></ReactBeforeSliderComponent>
+            <span className="bas__nametag uns">{elem.title}</span>
           </div>
         ))}
       </section>

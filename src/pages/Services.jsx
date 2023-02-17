@@ -3,6 +3,7 @@ import { ServicesList as list } from "./Lists";
 import "./Pages.css";
 import { useState } from "react";
 import FP from "../assets/FP.png";
+import { useMediaQuery } from "react-responsive";
 
 function Services() {
   const [scValue, setscValue] = useState("flex");
@@ -10,6 +11,8 @@ function Services() {
   setTimeout(() => {
     setscValue("none");
   }, 6600);
+
+  const isPhone = useMediaQuery({ query: "(min-width: 480px)" });
 
   return (
     <div onClick={() => setscValue("none")}>
@@ -23,6 +26,7 @@ function Services() {
       <section id="land-section">
         <ScrollContainer
           className="services__container scroll-container"
+          onStartScroll={() => setscValue("none")}
           vertical={false}
           horizontal={true}
           hideScrollbars={true}

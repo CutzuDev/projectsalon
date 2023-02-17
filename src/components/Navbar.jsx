@@ -1,8 +1,11 @@
 import LOGO from "../assets/LOGO.png";
 import "./Components.css";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 function Navbar() {
+  const isPhone = useMediaQuery({ query: "(min-width: 480px)" });
+
   return (
     <nav>
       <div className="navbar__container">
@@ -10,7 +13,7 @@ function Navbar() {
           <Link to={"/"}>
             <img draggable={false} src={LOGO} alt="" className="nav__logo" />
           </Link>
-          <h1 className="nav__title">Selim Lavinia</h1>
+          {isPhone && <h1 className="nav__title">Selim Lavinia</h1>}
         </div>
         <ul className="nav__list">
           <Link to={"/servicii"}>

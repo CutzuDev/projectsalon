@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 import AboutMePicture from "../assets/about_me_picture.jpeg";
 import "./Pages.css";
 
+import { useMediaQuery } from "react-responsive";
+
 function Home() {
+  const isPhone = useMediaQuery({ query: "(min-width: 480px)" });
   //   let test = [];
   //   for (let i = 0; i < 160; i++) {
   //     test = [...test, i];
@@ -18,7 +21,7 @@ function Home() {
   return (
     <div>
       <section id="land-section">
-        <h1 className="about-me__title">Despre Mine</h1>
+        {isPhone && <h1 className="about-me__title">Despre Mine</h1>}
         <div className="about-me__para-container">
           <p className="about-me__para">
             Lucrez in domeniul beauty de 7 ani, sunt acreditata in
