@@ -4,7 +4,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150044694585495/IMG5.png",
     },
-  beforeImage: {
+    beforeImage: {
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150043390156880/IMG7.png",
     },
@@ -19,7 +19,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150045403435058/IMG3.png",
     },
-    title: "micropigmentare",
+    title: "asdasdasdasdas",
   },
   {
     afterImage: {
@@ -32,9 +32,46 @@ export let ClientsList = [
     },
     title: "micropigmentare",
   },
+
+  // LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
+  {
+    afterImage: {
+      imageUrl:
+        "https://media.discordapp.net/attachments/857281682242273361/1077646686823907399/eed53465-24fb-4e30-98b2-523d72a5ee2d.png",
+    },
+
+    beforeImage: {
+      imageUrl:
+        "https://media.discordapp.net/attachments/857281682242273361/1077646665789476914/aa48e56d-c11c-4294-b8b7-c75511a83764.png",
+    },
+    title: "micropigmentare",
+  },
+  {
+    afterImage: {
+      imageUrl:
+        "https://media.discordapp.net/attachments/857281682242273361/1077646767929172059/25eea0f3-95a0-4eb3-91fa-4a2bd38382c7.png",
+    },
+
+    beforeImage: {
+      imageUrl:
+        "https://media.discordapp.net/attachments/857281682242273361/1077646741089812540/8e8fbe81-ab8a-4995-89cf-430045164ccb.png",
+    },
+    title: "micropigmentare",
+  },
+  {
+    afterImage: {
+      imageUrl:
+        "https://media.discordapp.net/attachments/857281682242273361/1077646883368996904/7707ef5c-0041-46c4-8264-b4af40a483d8.png",
+    },
+
+    beforeImage: {
+      imageUrl:
+        "https://media.discordapp.net/attachments/857281682242273361/1077646812866949170/a3e7bfda-6902-44b3-a624-af64de9bf751.png",
+    },
+    title: "micropigmentare",
+  },
 ];
 
-// LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
 // LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
 // LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
 // LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER

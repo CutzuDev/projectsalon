@@ -404,11 +404,11 @@
 
   #land-section {
     width: calc(100vw - 40px);
-    height: calc(100vh - var(--nav-height) - var(--footer-height) - 40px);
+    height: calc(180vh - var(--nav-height) - var(--footer-height) - 40px);
     display: grid;
     gap: 5px;
     place-items: center;
-    grid-template: repeat(20, 1fr) / repeat(10, 1fr);
+    grid-template: repeat(38, 1fr) / repeat(10, 1fr);
     margin: 20px;
   }
 
@@ -460,6 +460,7 @@
 
   .beforeAfterSlider__container:nth-child(1) {
     grid-column: var(--gcVal);
+    grid-row: 2 / span 6;
   }
   .beforeAfterSlider__container:nth-child(4) {
     grid-column: var(--gcVal);
