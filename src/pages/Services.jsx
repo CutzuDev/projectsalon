@@ -23,7 +23,7 @@ function Services() {
           </div>
         </div>
       </div>
-      <section id="land-section">
+      <section id="land-section" >
         <ScrollContainer
           className="services__container scroll-container"
           onStartScroll={() => setscValue("none")}

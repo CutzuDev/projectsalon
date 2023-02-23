@@ -12,7 +12,7 @@ function Clients() {
 
   return (
     <div>
-      <section id="land-section" className="lsClientsEdit">
+      <section id="land-section" className="lsEdit">
         {list.map((elem, index) => (
           <div className="beforeAfterSlider__container">
             <ReactBeforeSliderComponent

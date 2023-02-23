@@ -8,7 +8,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150043390156880/IMG7.png",
     },
-    title: "micropigmentare",
+    title: "Micropigmentare Powder",
   },
   {
     afterImage: {
@@ -19,7 +19,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150045403435058/IMG3.png",
     },
-    title: "asdasdasdasdas",
+    title: "Stilizare Sprancene",
   },
   {
     afterImage: {
@@ -30,10 +30,9 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1075150049182503003/IMG1.png",
     },
-    title: "micropigmentare",
+    title: "Tratament Carbon",
   },
 
-  // LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
   {
     afterImage: {
       imageUrl:
@@ -44,7 +43,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1077646665789476914/aa48e56d-c11c-4294-b8b7-c75511a83764.png",
     },
-    title: "micropigmentare",
+    title: "Micropigmentare",
   },
   {
     afterImage: {
@@ -56,7 +55,7 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1077646741089812540/8e8fbe81-ab8a-4995-89cf-430045164ccb.png",
     },
-    title: "micropigmentare",
+    title: "Neutralizare Laser",
   },
   {
     afterImage: {
@@ -68,13 +67,10 @@ export let ClientsList = [
       imageUrl:
         "https://media.discordapp.net/attachments/857281682242273361/1077646812866949170/a3e7bfda-6902-44b3-a624-af64de9bf751.png",
     },
-    title: "micropigmentare",
+    title: "Micropigmentare",
   },
 ];
 
-// LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
-// LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
-// LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
 // LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER LIST BORDER
 
 export let ServicesList = [

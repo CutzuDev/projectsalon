@@ -5,25 +5,29 @@ function Contact() {
     <div>
       <section id="land-section">
         <div className="contact__container">
-          <div className="contact__item">
-            <h1 className="contact__title">Locatie</h1>
-            <p className="contact__text">
-              Bulevardul Alexandru Obregia Nr 27 Bloc A18 Sc 1 ap 2
-            </p>
+          <div className="contact__item-list">
+            <div className="contact__item">
+              <h1 className="contact__title">Locatie</h1>
+              <p className="contact__text">
+                Bulevardul Alexandru Obregia Nr 27 Bloc A18 Sc 1 ap 2
+              </p>
+            </div>
+            <div className="contact__item">
+              <h1 className="contact__title">Telefon</h1>
+              <a href="tel:+40767600026" className="contact__text">
+                0767600026
+              </a>
+            </div>
+            <div className="contact__item">
+              <h1 className="contact__title">Email</h1>
+              <a
+                href="mailto:Selim.lavinia@yahoo.com"
+                className="contact__text"
+              >
+                Selim.lavinia@yahoo.com
+              </a>
+            </div>
           </div>
-          <div className="contact__item">
-            <h1 className="contact__title">Telefon</h1>
-            <a href="tel:+40767600026" className="contact__text">
-              0767600026
-            </a>
-          </div>
-          <div className="contact__item">
-            <h1 className="contact__title">Email</h1>
-            <a href="mailto:Selim.lavinia@yahoo.com" className="contact__text">
-              Selim.lavinia@yahoo.com
-            </a>
-          </div>
-
           <div className="map__container">
             <iframe
               className="mapClass"
