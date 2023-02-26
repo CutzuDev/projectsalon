@@ -29,12 +29,13 @@ function Contact() {
             </div>
           </div>
           <div className="map__container">
-            <iframe
+            {/* <iframe
               className="mapClass"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.2815013762702!2d26.112481209629333!3d44.39147239292978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe465e1e006d%3A0xd56850cb82d4bdb9!2sMega%20Image!5e0!3m2!1sen!2sro!4v1676486702494!5m2!1sen!2sro"
+              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.2815013762702!2d26.112481209629333!3d44.39147239292978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe465e1e006d%3A0xd56850cb82d4bdb9!2sMega%20Image!5e0!3m2!1sen!2sro!4v1676486702494!5m2!1sen!2sro"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> */}
+            <p>GOOGLE MAPS IN PROGRESS</p>
           </div>
         </div>
       </section>
