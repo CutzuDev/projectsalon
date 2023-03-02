@@ -95,13 +95,13 @@ export let ServicesList = [
       },
 
       {
-        service: "Revenire dupa un an",
-        price: "450",
+        service: "Revenire dupa 1 an / 2",
+        price: "450/550",
       },
-      {
-        service: "Dupa 2+",
-        price: "550",
-      },
+      // {
+      //   service: "Dupa 2+",
+      //   price: "550",
+      // },
       {
         service: "Scalp",
         price: "500/1000",
@@ -156,6 +156,7 @@ export let ServicesList = [
       {
         service: "Stilizat",
         price: "65",
+        details: "Pensat + Forma + Vopsit",
       },
       {
         service: "Vopsit",
@@ -164,6 +165,7 @@ export let ServicesList = [
       {
         service: "Decupaj",
         price: "35",
+        details: "Decolorarea Sprancenelor",
       },
     ],
   },

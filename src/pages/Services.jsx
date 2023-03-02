@@ -23,7 +23,7 @@ function Services() {
           </div>
         </div>
       </div>
-      <section id="land-section" >
+      <section id="land-section">
         <ScrollContainer
           className="services__container scroll-container"
           onStartScroll={() => setscValue("none")}
@@ -42,11 +42,14 @@ function Services() {
               <h3 className="services__item-title">{e.title}</h3>
               <ul className="services__item-element--container">
                 {e.list.map((e, i) => (
-                  <li className="services__item-element" key={i}>
-                    {e.service}
-                    <span className="services__item-element--price">
-                      {e.price} RON
-                    </span>
+                  <li className="services__item--element-container" key={i}>
+                    <div className="services__item-element">
+                      {e.service}
+                      <span className="services__item-element--price">
+                        {e.price} RON
+                      </span>
+                    </div>
+                    {descriptionFunc(e.details)}
                   </li>
                 ))}
               </ul>
@@ -56,6 +59,12 @@ function Services() {
       </section>
     </div>
   );
+}
+
+function descriptionFunc(details) {
+  if (details) {
+    return <span className="services__item-element--description">{details}</span>;
+  }
 }
 
 export default Services;
