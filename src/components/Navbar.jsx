@@ -29,9 +29,11 @@ function Navbar() {
               <li className="nav__button nb__custom">Contact</li>
             </Link>
           )}
-          <Link to={"/contact"} className="nb__customeP">
-            <Contact size={30} color={"#fdc5f5"} />
-          </Link>
+          {isPhone && (
+            <Link to={"/contact"} className="nb__customeP">
+              <Contact size={30} color={"#fdc5f5"} />
+            </Link>
+          )}
         </ul>
       </div>
     </nav>

@@ -44,7 +44,9 @@ function Services() {
                 {e.list.map((e, i) => (
                   <li className="services__item--element-container" key={i}>
                     <div className="services__item-element">
-                      {e.service}
+                      <span className="services__item-element--service">
+                        {e.service}
+                      </span>
                       <span className="services__item-element--price">
                         {e.price} RON
                       </span>
@@ -63,7 +65,9 @@ function Services() {
 
 function descriptionFunc(details) {
   if (details) {
-    return <span className="services__item-element--description">{details}</span>;
+    return (
+      <span className="services__item-element--description">{details}</span>
+    );
   }
 }
 
