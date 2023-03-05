@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <div>
-      <section id="land-section">
+      <section id="land-section" className="lsEdit">
         <Link to={"/servicii"} className="about-me__services">
           <h1 className="about-me__services--title">Serviciile Mele</h1>
           <ul className="about-me__services--list">
@@ -32,8 +32,19 @@ function Home() {
             ))}
           </ul>
         </Link>
+
         <div className="about-me__picture">
-          <img src={AboutMePicture} draggable={false} alt="" />
+          <img src={AboutMePicture} draggable={false} />
+        </div>
+
+        <h1 className="about-me__title">Despre Mine</h1>
+        <div className="about-me__para-container">
+          <p className="about-me__para">
+            Lucrez in domeniul beauty de 7 ani, sunt acreditata in
+            dermopigmentare, make-up, si tatto remove (stergere indepartare
+            tatuaje), iubesc ceea ce fac si mereu imi doresc sa obtin cele mai
+            bune rezultate pentru clientii mei.
+          </p>
         </div>
       </section>
     </div>
