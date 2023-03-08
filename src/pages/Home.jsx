@@ -16,7 +16,7 @@ function Home() {
     "Microneedling",
     "Tratamente Faciale",
     "Epilare cu ceara",
-    "Hyoluron Pen (Marire Buze)",
+    "Hyaluron Pen (Marire Buze)",
   ];
 
   return (

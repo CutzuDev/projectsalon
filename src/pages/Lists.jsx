@@ -120,11 +120,11 @@ export let ServicesList = [
         price: "150",
       },
       {
-        service: "Peep Carbon",
+        service: "Peel Carbon",
         price: "300",
       },
       {
-        service: "Peep Carbon & Curatare",
+        service: "Peel Carbon & Curatare",
         price: "400",
       },
 
@@ -154,7 +154,7 @@ export let ServicesList = [
         price: "50",
       },
       {
-        service: "Stilizat",
+        service: "Stilizat Sprancene",
         price: "65",
         details: "Pensat + Forma + Vopsit",
       },
@@ -163,7 +163,7 @@ export let ServicesList = [
         price: "20",
       },
       {
-        service: "Decupaj",
+        service: "Decapaj",
         price: "35",
         details: "Decolorarea Sprancenelor",
       },
